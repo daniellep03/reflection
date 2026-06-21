@@ -1,0 +1,23 @@
+# Week 7 Reflection — EIPs Part 2: State Charts
+
+**Concept: Statechart**
+
+A statechart is a way to show the different states a system can be in and how it moves between those states. 
+Instead of using a bunch of flags and conditions, it gives each situation a clear name and shows what events cause changes. 
+Statecharts can also include rules that control when transitions are allowed and actions that happen when a transition occurs.
+
+When I learned about statecharts, I realized that UVSim already works a lot like one. 
+The simulator has four main states: **Idle** (no program loaded), **Ready** (program loaded and ready to start), **Running** (currently executing instructions), and **Halted** (program finished or stopped because of an error). 
+Events such as `load_program`, `run`, `step`, and `halt_instruction` move the simulator from one state to another.
+
+There are also conditions that need to be checked before some actions can happen. 
+For example, the simulator should only move from **Ready** to **Running** if a valid program has been loaded. Also, the `step` command should only work when the simulator is in the **Ready** or **Running** state, not when it is **Halted**.
+
+This became more important during Sprint 2 when we added the GUI. 
+The interface needed to know when buttons should be enabled or disabled. 
+For example, the Run button should only work in the Ready state, while the Stop button should only work in the Running state. 
+We ended up checking flags like `is_running` and `is_loaded` in several places, which sometimes caused inconsistent behavior. 
+If we had clearly defined states and transitions from the beginning, it would have made the GUI logic much cleaner and easier to manage.
+
+The biggest thing I learned this week is that state should be planned and clearly defined. 
+Instead of relying on different flags that can get confusing, it is much easier to understand a system when every possible situation has its own named state.
