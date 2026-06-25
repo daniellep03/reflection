@@ -1,0 +1,11 @@
+# Week 8 Reflection — Realtime Web
+
+For our Sprint 2 project, I think using a **WebSocket** makes the most sense. A WebSocket lets the website and server communicate with each other in real time. Instead of the player refreshing the page or waiting for updates, the server can send updates right away.
+
+This would be helpful for our multiplayer game because players need to see what is happening as it happens. For example, if one player joins the game, moves their character, sends a chat message, or changes something in the game, the server can send that update to the other players immediately. This helps the game feel more live and less delayed.
+
+WebSockets also connect to the **Publish-Subscribe Channel** idea. The server can send out a game update, and every player connected to that game can receive it. For example, if Player 1 moves, the server can publish a message saying that player moved. Then the other players’ screens can update to show the new location.
+
+Another thing we need to think about is reconnect-with-backoff. If someone loses connection, the game should try to reconnect after waiting a little bit. It should not try to reconnect over and over right away because that could cause problems for the server. After the player reconnects, they should get the newest game information so their screen is updated.
+
+Using WebSockets would help our game feel faster, more connected, and easier for players to use.
