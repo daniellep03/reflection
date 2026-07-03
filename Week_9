@@ -1,0 +1,21 @@
+# Week 9 Reflection – PRPL, Service Workers, Offline-First
+
+This week I learned about different cache strategies, and the one that made the most sense to me was **network-first**. 
+A network-first strategy tries to get the newest data from the server first. If the internet is not available, it uses the cached version instead. 
+I like this strategy because users can still use the app even if their connection is lost.
+
+For our Sprint 3 capstone project, I think network-first would be a good choice for things that change often, like user information, messages, or orders. 
+When the user is online, they will always get the latest data. 
+If they lose their internet connection, the app can still show the last saved version from the cache. 
+This makes the app more reliable and gives users a better experience because it does not stop working right away.
+
+I also learned that **service workers** are what make this possible. 
+They run in the background and handle network requests, caching, and offline support. 
+Before this week, I did not know how websites could still work without an internet connection. 
+Now I understand that service workers and cache strategies work together to make that happen.
+
+Overall, I think this topic will be useful for our Sprint 3 project. 
+Using the right cache strategy can make the app feel faster and more reliable. 
+It also helps users keep using the application even when they have a slow or no internet connection. 
+This lecture showed me that making a good user experience is not just about adding features. 
+It is also about making sure the application works well in different situations.
