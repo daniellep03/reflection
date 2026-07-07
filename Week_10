@@ -1,0 +1,14 @@
+This week's lesson helped me understand that building an application is more than just making it work. 
+I learned about the different concerns in the Perfect Framework, like scale, internationalization (i18n), accessibility, RBAC, audit trails, and observability. 
+Before this week, I mostly focused on writing code that worked, but now I see that a good application also needs to be easy to use, secure, and able to grow as more people use it.
+
+The topic that stood out to me the most was accessibility. 
+I never realized how many small things, like keyboard navigation, color contrast, and screen reader support, can make a big difference for users. 
+It made me think about designing applications for everyone instead of only thinking about myself as the user.
+
+I also learned the difference between authentication and authorization. 
+Before, I thought they were basically the same thing, but now I understand that RBAC controls what each user is allowed to see and do based on their role. 
+I also found audit trails interesting because they keep a history of who made changes, when they happened, and why, which is important for security and troubleshooting.
+
+Overall, this week's lesson gave me a better understanding of what goes into building a professional application. 
+These concepts will help me make better decisions for our capstone project, and I can see why they are important in real-world software development.
