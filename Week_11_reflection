@@ -1,0 +1,16 @@
+# Week 11 Reflection
+
+For this week, I chose the MediaStream API, specifically getUserMedia(). 
+This API allows a web application to request access to the user's camera or microphone after they give permission. 
+I learned that browsers require users to explicitly allow access before the application can use these devices, which helps protect privacy.
+
+For my Sprint 3 capstone, I would use getUserMedia() to let users capture images directly from their camera instead of uploading photos manually. 
+This would make the application easier to use, especially on mobile devices. 
+Before requesting camera access, I would also use the Permissions API to check whether permission has already been granted or denied. 
+That way, the app can respond appropriately without repeatedly showing permission prompts, which creates a better user experience.
+
+This week's lecture also helped me understand that advanced web APIs give websites access to hardware features while still keeping users in control through browser permissions. 
+Even though adding camera support seems simple, there are several things to consider, like handling denied permissions, stopping the camera stream when it's no longer needed, and making sure the feature works across different devices.
+
+Overall, I think MediaStream is a practical advanced-platform feature because it improves the user experience and fits well with my Sprint 3 project. 
+It also showed me how modern web applications can provide features that used to require native mobile or desktop apps.
