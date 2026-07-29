@@ -1,0 +1,15 @@
+# Week 13 Reflection — CI/CD · Observability · Production-Readiness
+
+One concept that stood out to me this week was CI/CD, especially the idea of using a GitHub Actions workflow to automatically run tests before code is merged into the main branch. 
+I think this is a really helpful way to catch bugs early instead of finding them after the application is already deployed. 
+It also helps make teamwork easier because everyone knows that the code has passed the required checks before it becomes part of the main project.
+
+For our capstone project, I would set up a workflow that runs every time someone opens a pull request. 
+The workflow would automatically run our tests and make sure everything is working correctly. 
+If one of the tests fails, the deploy gate would stop the code from being merged until the issue is fixed. 
+Once all the tests pass and the pull request is approved, the project can safely be merged into the main branch and deployed.
+
+Learning about CI/CD made me realize how important automation is in software development. 
+Instead of manually checking everything, the workflow helps make the process faster and more reliable. 
+It also gives the team more confidence that new changes will not accidentally break existing features. 
+Overall, I think using a CI/CD pipeline is a smart way to improve code quality and make the development process more organized.
